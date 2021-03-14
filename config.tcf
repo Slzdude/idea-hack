@@ -1,0 +1,6 @@
+verbose = true
+no_sec = true
+rem_sig = false
+executions = me.nov.threadtear.execution.generic.ObfuscatedAccess
+executions = me.nov.threadtear.execution.analysis.RemoveTCBs
+executions = me.nov.threadtear.execution.zkm.DESObfuscationZKM

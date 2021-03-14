@@ -1,5 +1,11 @@
 ## IDEA 的插件 Repo
 
+### TL;DR
+
+把`https://idea.skactor.com/updatePlugins.xml`添加到IDEA的Repo中即可在线安装破解过的`Markdown Navigator Enhanced`
+
+### 技术细节
+
 原始插件可以从以下地址进行下载：https://plugins.jetbrains.com/pluginManager/?build=PY-203.6682.86&id=pro.bashsupport&uuid=2065e423-e002-42dd-a93a-c44a49da1a51
 
 IDEA 支持自定义插件仓库，通过这个功能我们能对 IDEA 的一些插件进行破解，同时一次破解到处使用，简直美滋滋

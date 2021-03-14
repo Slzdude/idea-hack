@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugins>
-  <plugin id="com.vladsch.idea.multimarkdown" url="https://github.com/Skactor/idea-hack/raw/master/idea-multimarkdown.zip" version="3.0.202.112">
+  <plugin id="com.vladsch.idea.multimarkdown" url="https://idea.skactor.com/idea-multimarkdown.zip" version="3.0.202.112">
     <idea-version since-build="202.0"/>
     <name>Markdown Navigator Enhanced</name>
     <vendor email="" url="http://github.com/vsch/idea-multimarkdown">Vladimir Schneider</vendor>

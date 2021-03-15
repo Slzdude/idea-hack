@@ -1,15 +1,58 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='iso8859-1'?>
 <plugins>
-  <plugin id="com.vladsch.idea.multimarkdown" url="https://idea.skactor.com/idea-multimarkdown.zip" version="3.0.202.112">
-    <idea-version since-build="202.0"/>
+  <plugin id="pro.bashsupport" url="https://idea.skactor.com/files/bashsupport-pro.zip" version="1.5.16.203"><idea-version since-build="203.5981.0" until-build="203.*"/>
+  <name>BashSupport Pro</name>
+  <vendor email="mail@ja-dev.eu" url="https://www.j-a.dev">joachim_ansorg</vendor>
+  <rating>5</rating><description><![CDATA[<p>BashSupport Pro is <strong>a plugin for advanced Bash and shell script development</strong> �? debugger, test runner, code completion, find usages, rename, ShellCheck, shfmt, and more.</p>
+<p><br><a href="https://www.bashsupport.com/pro/">docs</a> · <a href="https://www.bashsupport.com/pro/installation/">install instructions</a> · <a href="https://www.bashsupport.com/pro/features/">features</a> · <a href="https://github.com/BashSupport-Pro/bashsupport-pro/issues">bug tracker</a> · <a href="https://www.bashsupport.com/pro/free-license/">free licenses</a>
+<br>
+<br></p>
+<ul>
+<li><strong>bashdb Debugger</strong>: Debug Bash scripts with bashdb on macOS, Linux, and Windows (WSL, Git Bash, Cygwin).</li>
+<li><strong>bats-core Test Runner</strong>: Run bats-core tests on macOS, Linux, and Windows (WSL, Git Bash, Cygwin).</li>
+<li><strong>ShellCheck Support</strong>: <a href="https://github.com/koalaman/shellcheck">ShellCheck</a> is bundled and used to highlight problems in script files.</li>
+<li><strong>shfmt Formatter</strong>: <a href="https://github.com/mvdan/sh">shfmt</a> is bundled and is used to format script files.</li>
+<li><strong>Powerful Run Configurations</strong>: Run inline snippets, define stdin redirection, control logging, works well on Windows (WSL, Git Bash, Cygwin) and can be shared cross–platform. Run configurations of legacy BashSupport and of JetBrains Shell are supported without the plugins being installed.</li>
+<li><strong>Multi-File Navigation</strong>: All features support sourced files: go to definition, rename, find usages, completions, etc. The <code>shellcheck source=</code> directive is used to support dynamic path values.</li>
+<li><strong>Advanced Code Completion</strong>: it only suggests functions and variables, which are valid at the current position in your script.</li>
+<li><strong>Rename</strong>: Rename files, functions, variable definitions, and variable references without breaking your scripts.</li>
+<li><strong>Find Usages</strong>: Find usages of your functions and variables in your scripts, sourced files and files sourcing the file.</li>
+<li><strong>Go To Definition</strong>: Supports <code>unset</code> and definitions by assignments, <code>export</code>, <code>typeset</code>, <code>declare</code>, <code>local</code>, <code>getopts</code>, <code>mapfile</code>, <code>read</code>, <code>readonly</code>, and <code>select</code>.</li>
+<li><strong>Quick Documentation</strong>: View documentation of your functions, variable, built-ins (<code>help</code>), and commands (<code>info</code>).</li>
+<li><strong>Code Folding</strong>: Powerful code folding to help you edit large scripts.</li>
+<li><strong>Helpers</strong>: Intentions, inspections, line markers for recursive calls, editor breadcrumbs, navigation bar breadcrumbs, and more.</li>
+<li><strong>Free Licenses</strong>: Free licenses available for students, teachers, open–source projects, <a href="https://www.bashsupport.com/pro/free-license/">and others</a></li>
+</ul>
+<p><br>Please refer to <a href="https://www.bashsupport.com/pro/">bashsupport.com</a> for the complete documentation and an overview of all available features.</p>
+]]></description>
+  <change-notes><![CDATA[<p>Please don&rsquo;t hesitate to post any issue you might have on the <a href="https://github.com/BashSupport-Pro/bashsupport-pro/issues">issue tracker</a>.
+<br>
+<br></p>
+<h2>General</h2>
+<ul>
+<li>Fixed: Blocking UI in code style preview settings after changing settings.</li>
+<li>Fixed: Exception when saving configuration settings in 2021.1.</li>
+</ul>
+<h2>Syntax</h2>
+<ul>
+<li>Fixed: Variable reference in parameter expansion of array indices wasn&rsquo;t handled correctly.</li>
+<li>Fixed (<a href="https://github.com/BashSupport-Pro/bashsupport-pro/issues/67">#67</a>): Parsing of escaped characters in some types of parameter expansions.</li>
+</ul>
+<h2>Formatter</h2>
+<ul>
+<li>Improved: Formatting of non-physical files now detects the file type, which is passed on to shfmt. Before, POSIX was always used.</li>
+</ul>
+]]></change-notes>
+  </plugin>
+  <plugin id="com.vladsch.idea.multimarkdown" url="https://idea.skactor.com/files/idea-multimarkdown.zip" version="3.0.202.112"><idea-version since-build="202"/>
+
     <name>Markdown Navigator Enhanced</name>
-    <vendor email="" url="http://github.com/vsch/idea-multimarkdown">Vladimir Schneider</vendor>
-    <rating>5</rating>
-    <description><![CDATA[
-        <div>
-            <p><a href="https://daringfireball.net/projects/markdown"><span>Markdown</span></a> language support for IntelliJ platform</p>
+    <vendor email="vladimir@vladsch.com" url="https://vladsch.com">vladsch</vendor>
+    <rating>5</rating><description><![CDATA[
+        <div xmlns="http://www.w3.org/1999/html">
+            <p><a href="https://daringfireball.net/projects/markdown"><span style="color:#30A0D8;">Markdown</span></a> language support for IntelliJ platform</p>
             <p><br></p>
-            <p>Markdown Navigator <a href="https://vladsch.com/product/markdown-navigator">enhanced edition</a><br>
+            <p>Markdown Navigator <a href="https://vladsch.com/product/markdown-navigator">enhanced edition</a><br />
                 available in JetBrains Marketplace or with a legacy license.</p>
             <h2>Document with pleasure!</h2>
             <p>Work with <a href="https://daringfireball.net/projects/markdown">Markdown</a> files like you do with other languages in the IDE, by getting full support
@@ -24,19 +67,19 @@
                 <li><strong>Export</strong> to <strong>HTML</strong> or <strong>PDF</strong> to share with others</li>
                 <li><strong>Refactoring</strong> of all referencing elements:
                     <ul>
-                        <li>files ⟺ links</li>
-                        <li>headings ⟺ ref anchors</li>
-                        <li>footnotes ⟺ footnote refs</li>
-                        <li>references ⟺ ref links/ref images</li>
+                        <li>files ? links</li>
+                        <li>headings ? ref anchors</li>
+                        <li>footnotes ? footnote refs</li>
+                        <li>references ? ref links/ref images</li>
                     </ul>
                 </li>
                 <li><strong>Completions</strong> to reduce typing:
                     <ul>
-                        <li>link address ⇐ files</li>
-                        <li>ref anchors ⇐ headings</li>
-                        <li>footnote refs ⇐ footnotes</li>
-                        <li>ref links/ref images ⇐ references</li>
-                        <li>link text ⇐ ref anchor/link address</li>
+                        <li>link address ? files</li>
+                        <li>ref anchors ? headings</li>
+                        <li>footnote refs ? footnotes</li>
+                        <li>ref links/ref images ? references</li>
+                        <li>link text ? ref anchor/link address</li>
                     </ul>
                 </li>
                 <li><strong>Error and Warning</strong> annotations to help catch mistakes early</li>
@@ -54,11 +97,12 @@
                 <li><strong>Fast typing response</strong> for distraction free editing</li>
                 <li><strong>Fully customizable</strong> to adjust to your preferences and project needs</li>
             </ul>
-            <p><img src="https://raw.githubusercontent.com/vsch/idea-multimarkdown/master/assets/images/plugin_description_img2.png" alt="Screenshot"></p>
+            <p><img src="https://raw.githubusercontent.com/vsch/idea-multimarkdown/master/assets/images/plugin_description_img2.png" alt="Screenshot" /></p>
         </div>
         ]]></description>
+
     <change-notes><![CDATA[
-        <div>
+        <div xmlns="http://www.w3.org/1999/html">
             <h3>3.0.202.112 - Bug Fix Release</h3>
             <ul>
                 <li>Fix: diagnostic/4949, NoClassDefFoundError: Could not initialize MdCodeStyleSettings.</li>
@@ -243,7 +287,7 @@
                 <li>Fix: move licensing to own class</li>
                 <li>Fix: broken Markdown to HTML intention</li>
                 <li>Fix: change references keep to first so sort unused last does not toggle references</li>
-                <li>Fix: for <code>Copy Markdown as HTML Mime Content</code> action to use current file’s profile parser
+                <li>Fix: for <code>Copy Markdown as HTML Mime Content</code> action to use current file&rsquo;s profile parser
                     settings instead of the <code>COPY_HTML_MIME</code> profile parser settings</li>
                 <li>Fix: use own icons for table dialogs</li>
                 <li>Fix: Formatter equalize trailing marker should not add marker if there is none</li>
@@ -354,5 +398,6 @@
             </ul>
         </div>
         ]]></change-notes>
-  </plugin>
+
+    </plugin>
 </plugins>

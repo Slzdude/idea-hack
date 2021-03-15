@@ -2,7 +2,10 @@
 
 ### TL;DR
 
-把`https://idea.skactor.com/updatePlugins.xml`添加到IDEA的Repo中即可在线安装破解过的`Markdown Navigator Enhanced`
+把`https://idea.skactor.com/updatePlugins.xml`添加到 IDEA 的 Repo 中即可在线安装破解过的以下插件
+
+- Markdown Navigator Enhanced
+- BashSupport Pro
 
 ### 技术细节
 
@@ -51,3 +54,26 @@ IDEA 支持自定义插件仓库，通过这个功能我们能对 IDEA 的一些
 - Markdown 这个插件去除校验之后，获得的是 trail 版的权限
 
 看了看没啥头绪，考虑直接破解认证模块，也就是`com/vladsch/legacy/a`这个类，应该在`legacy-lic.jar`这个包里
+
+### Tips
+
+- https://github.com/search?l=Kotlin&q=LicensingFacade&type=Code
+- https://github.com/nhat-phan/sentry-integration/blob/ce937bbb5ec9328dd4008bbefcef6b2734503685/sentry-integration-idea/src/main/kotlin/net/ntworld/sentryIntegrationIdea/license/IntellijCheckLicense.kt
+
+```
+// 直接返回true
+DEFINE STATIC b()Z
+A:
+LINE A 8
+ICONST_1
+IRETURN
+```
+
+### 修改记录
+
+###
+
+#### bashsupport pro
+
+- pro.bashsupport.d5 的 a、b、c、d 四个方法直接返回 true
+- pro.bashsupport.abc 的 b 方法直接返回 true

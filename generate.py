@@ -15,7 +15,6 @@ if os.path.exists("CNAME"):
 plugins_xml = etree.Element("plugins")
 
 for file in glob.glob("files/*.zip"):
-    print("loading", file)
     with zipfile.ZipFile(file) as plugin_zip:
         basename = os.path.splitext(os.path.basename(file))[0]
         target = None
@@ -36,8 +35,6 @@ for file in glob.glob("files/*.zip"):
             print("reading xml with length:", len(xml))
             parser = etree.XMLParser(encoding="iso8859-1", strip_cdata=False)
             plugin_xml = etree.XML(xml, parser)
-            print(plugin_xml.findtext("./id"))
-
             plugin_element = etree.SubElement(
                 plugins_xml,
                 "plugin",
@@ -57,6 +54,7 @@ for file in glob.glob("files/*.zip"):
             e = plugin_xml.find("./change-notes")
             e.text = etree.CDATA(e.text)
             plugin_element.append(e)
+            print("added plugin:", plugin_xml.findtext("./id"))
     print("=" * 32)
 
 open("updatePlugins.xml", "wb").write(

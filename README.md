@@ -6,6 +6,7 @@
 
 - Markdown Navigator Enhanced
 - BashSupport Pro
+- CodeMR
 
 ### 技术细节
 

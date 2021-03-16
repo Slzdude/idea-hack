@@ -44,6 +44,38 @@
 </ul>
 ]]></change-notes>
   </plugin>
+  <plugin id="com.codemr.analyzer" url="https://idea.skactor.com/files/CodeMR-2021.1.1-release-2020.2.zip" version="2021.1.1-release-2020.2"><idea-version since-build="202"/>
+  <name>CodeMR</name>
+  <vendor email="info@codemr.co.uk" url="https://www.codemr.co.uk">CodeMR</vendor>
+  <rating>5</rating><description><![CDATA[
+<strong>CodeMR</strong> is a software quality and static code analysis tool for <strong>Java</strong>, <strong>Kotlin</strong> and <strong>Scala</strong> projects. It helps software companies for developing better code, better quality products.<br>
+CodeMR visualizes code metrics and high level quality attributes (coupling, complexity, cohesion and size) in different views, such as Package Structure, TreeMap, Sunburst, Dependency and Graph Views.<br>
+The graph visualization technique applied in CodeMR is simple yet intuitive. CodeMR has different filtering options and supports custom queries. It visualizes high-level object-oriented quality attributes and low level metrics. Quality attributes are derived from the combinations of several metrics. You can also create different HTML reports for the project and export many object-oriented metrics for packages, classes, and methods.<br>
+CodeMR analyses your source code on <b>your local machine</b> and save all analysis files to your local working directory. It does not share your source code with any our or third-party servers.<br>
+
+<strong>Requirements:</strong>
+<ul>
+    <li>IntelliJ Platform 2018.1 or an upper version</li>
+    <li>Optional IntelliJ Scala Plugin for analyzing Scala codes</li>
+    <li>Optional IntelliJ Kotlin Plugin for analyzing Kotlin codes</li>
+    <li>Additional note for Android Studio: Some of CodeMR UI components use JavaFx packages. If JDK used by your IDE doesn't support JavaFx, you can change JDK of IDE as described here: https://intellij-support.jetbrains.com/hc/en-us/articles/206544879</li>
+</ul>
+
+For more information, please visit <a href="https://www.codemr.co.uk" rel="nofollow">https://www.codemr.co.uk</a><br>
+<strong>Better Code, Better Quality...</strong>
+
+    ]]></description>
+  <change-notes><![CDATA[
+    
+        <ul>
+          <li>Dependency graph templates</li>
+          <li>Package dependency graphs</li>
+          <li>Customization of metric heatmap colors</li>
+          <li>UX enhancements</li>
+        </lu>
+    
+  ]]></change-notes>
+  </plugin>
   <plugin id="com.vladsch.idea.multimarkdown" url="https://idea.skactor.com/files/idea-multimarkdown.zip" version="3.0.202.112"><idea-version since-build="202"/>
 
     <name>Markdown Navigator Enhanced</name>
@@ -67,19 +99,19 @@
                 <li><strong>Export</strong> to <strong>HTML</strong> or <strong>PDF</strong> to share with others</li>
                 <li><strong>Refactoring</strong> of all referencing elements:
                     <ul>
-                        <li>files ? links</li>
-                        <li>headings ? ref anchors</li>
-                        <li>footnotes ? footnote refs</li>
-                        <li>references ? ref links/ref images</li>
+                        <li>files ‚ü? links</li>
+                        <li>headings ‚ü? ref anchors</li>
+                        <li>footnotes ‚ü? footnote refs</li>
+                        <li>references ‚ü? ref links/ref images</li>
                     </ul>
                 </li>
                 <li><strong>Completions</strong> to reduce typing:
                     <ul>
-                        <li>link address ? files</li>
-                        <li>ref anchors ? headings</li>
-                        <li>footnote refs ? footnotes</li>
-                        <li>ref links/ref images ? references</li>
-                        <li>link text ? ref anchor/link address</li>
+                        <li>link address ‚á? files</li>
+                        <li>ref anchors ‚á? headings</li>
+                        <li>footnote refs ‚á? footnotes</li>
+                        <li>ref links/ref images ‚á? references</li>
+                        <li>link text ‚á? ref anchor/link address</li>
                     </ul>
                 </li>
                 <li><strong>Error and Warning</strong> annotations to help catch mistakes early</li>

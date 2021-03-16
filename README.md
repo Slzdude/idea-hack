@@ -6,6 +6,7 @@
 
 - Markdown Navigator Enhanced
 - BashSupport Pro
+- CodeMR
 
 ### 技术细节
 
@@ -57,23 +58,34 @@ IDEA 支持自定义插件仓库，通过这个功能我们能对 IDEA 的一些
 
 ### Tips
 
+- 重点特征：com.intellij.ui.LicensingFacade，这个类是插件与IDEA通信的通道
 - https://github.com/search?l=Kotlin&q=LicensingFacade&type=Code
 - https://github.com/nhat-phan/sentry-integration/blob/ce937bbb5ec9328dd4008bbefcef6b2734503685/sentry-integration-idea/src/main/kotlin/net/ntworld/sentryIntegrationIdea/license/IntellijCheckLicense.kt
 
 ```
 // 直接返回true
 DEFINE STATIC b()Z
-A:
-LINE A 8
 ICONST_1
 IRETURN
 ```
 
 ### 修改记录
 
-###
+### Markdown Navigator Enhanced
+
+- com.vladsch.legacy.a所有返回值为boolean型的都返回true
+- com.vladsch.legacy.f所有返回值为boolean型的都返回true
+- 去掉plugin.xml里面的<product-descriptor>
+- 这样就获得了完整授权
+
+### CodeMR
+
+- com.codemr.intellij.extractors.e的a、b、c、d四个方法直接返回true
+- 去掉plugin.xml里面的<product-descriptor>
+
+![20210316222005](images/20210316222005.png)
 
 #### bashsupport pro
 
-- pro.bashsupport.d5 的 a、b、c、d 四个方法直接返回 true
+- pro.bashsupport.d5 的a、b、c、d四个方法直接返回true
 - pro.bashsupport.abc 的 b 方法直接返回 true
